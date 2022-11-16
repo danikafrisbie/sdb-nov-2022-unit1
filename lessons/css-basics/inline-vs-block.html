@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline vs. Block Examples</title>
+    <!--Insert CSS styling here if desired for small block styling fixes...use <style> and then add CSS classes & info. Otherwise, link to a CSS sheet for complete styling-->
+
+        <!--<style>
+        .outline-box{
+            outline: 3px solid #000000;
+        }
+    </style>-->
+
+    <link rel="stylesheet" href="inline-vs-block.css" />
+    
+</head>
+<body>
+    <section>
+        <!--Block Elements-->
+        <h2>Block Elements</h2>
+
+        <!--If you find yourself repeating styling code, you need to make it a class-->
+
+        <!--Examples of block vs. inline styling below -->
+        <p class="outline-box">This is a paragraph block.</p>
+
+        <p style="outline: 3px solid #000000; font-style: italic; font-family: Arial, Helvetica, sans-serif;">This is a paragraph block.</p>
+
+        <p style="outline: 3px solid #000000; font-family: Arial, Helvetica, sans-serif;">This is a paragraph block.</p>
+
+        <ul>
+            <li>Block level elements always start a new line.</li>
+            <li>It will take up entire width of the parent.</li>
+        </ul>
+
+    </section>
+
+    <section>
+        <!-- Inline Elements-->
+        <hr />
+        <h2>Inline Elements</h2>
+
+        <p>
+            This is an example of a paragraph block with <a href="#" class="outline-box">inline styling</a>
+        </p>
+
+        <ul>
+            <li>An inline element does not start a new line.</li>
+            <li>An inline element only takes up as much width as neccessary.</li>
+
+        <h3>Common Inline Tags</h3>
+        <ul>
+            <li>span</li>
+            <li>strong - This is an example of <strong>strong text</strong></li>
+            <li>em - This is an example of italics with the <em>em tag</em></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Inline Block</h2>
+        <div>
+            <a href="#">Submit</a>
+            <a href="#">Clear</a>
+        </div>x
+            <a href="#">Outside the DIV</a>
+
+    </section>
+
+
+</body>
+</html>

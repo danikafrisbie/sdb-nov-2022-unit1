@@ -1,0 +1,30 @@
+h1 {
+    color: lightgreen;
+    text-align: center;
+}
+
+h3 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+.outline {
+    outline: solid thick black;
+    background-color: gray;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.small-outline {
+    outline: solid thin black;
+    background-color: lightgray;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}

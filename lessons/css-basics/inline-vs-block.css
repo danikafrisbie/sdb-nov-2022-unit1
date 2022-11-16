@@ -1,0 +1,16 @@
+.outline-box{
+    outline: 3px solid #000000;
+}
+
+div > a {
+    background-color: sandybrown;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+div > a:hover {
+    background-color: salmon;
+}
