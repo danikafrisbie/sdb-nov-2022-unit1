@@ -5,6 +5,19 @@
     color: var(--secondary)
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Antonio', sans-serif;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 25px;
+}
 
 .wrapper {
     display: grid;
@@ -32,5 +45,56 @@
 
 .header-text-group {
     margin-left: auto;
-    padding: 4.5rem
+    padding: 4.5rem;
+    text-align: center;
 }
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    font-family: 'Antonio', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: 20px;
+    padding: 1.5em;
+}
+
+.btn-100 {
+    min-width: 100%;
+}
+
+/* PRODUCTS */
+
+.wrapper-food-display {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem; This is a fixed column setting. We updated this below for a responsive design! */    
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+
+}
+
+.food-display {
+    padding: 2rem;
+}
+
+.food-display img {
+    min-width: 250px;
+    width: 100%;
+}
+
+/* We use @media screen to say, "Hey, if the screen size the person is using gets below THIS size, then modify the following classes in THIS way." For example here, "If the the screen width is up to 927px, make the grid temmplate columns 1fr. After 927, use default class settings" */
+
+@media screen and (max-width: 927px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
