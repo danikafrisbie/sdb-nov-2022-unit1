@@ -1,0 +1,36 @@
+:root {
+    background-color: #191919;
+    --primary: #c6a7ed;
+    --secondary: white;
+    color: var(--secondary)
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: auto;
+}
+
+.header-image {
+    height: 500px;
+    border: 50px solid var(--primary);
+}
+
+.header-text {
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 2rem;
+    font-family: 'Antonio', sans-serif;
+}
+
+.header-text:nth-child(1) {
+    color: var(--primary)
+}
+
+.header-text-group {
+    margin-left: auto;
+    padding: 4.5rem
+}
